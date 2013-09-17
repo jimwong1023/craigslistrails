@@ -1,0 +1,5 @@
+<h1><%= @post.title %></h1>
+<%= @post.description %>
+<%= mail_to(@post.email, "Contact") %>
+
+<%= link_to("Edit", edit_category_post_path(@category, @post)) %>
